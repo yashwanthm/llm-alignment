@@ -1,13 +1,13 @@
 created_by: nrml
 domain: Softball
 seed_examples:
-- answer: Thanksgiving day, 1887 in Chicago, Illinois, USA
+- answer: De Schorre provincial recreational park, 2005 
   question: When was the first, or earliest known game of softball played?
+- answer: It was created by brothers Manu and Michiel Beers
+  question: Who created tomorrowland
 task_description: ''
 document:
-  repo: ''
-  commit: ''
+  repo: 'https://github.com/yashwanthm/training-tests'
+  commit: '1bc0552'
   patterns:
-    - <file-search-patter 1>
-    - <file-search-patter 2>
-    - <file-search-patter 3>
+    - tomorrowland*.pdf
