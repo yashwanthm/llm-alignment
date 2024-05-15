@@ -6,6 +6,7 @@ seed_examples:
 - answer: Yashwanth works at Red Hat, he joined in Dec 2021
   question: Where does he work
 - answer: yes, he can write JavaScript and is fairly well versed with cloud platforms and running services in the cloud and managing them
+  question: can he code?
 task_description: ''
 document:
   repo: 'https://github.com/yashwanthm/training-tests'
