@@ -1,0 +1,13 @@
+created_by: nrml
+domain: Softball
+seed_examples:
+- answer: Thanksgiving day, 1887 in Chicago, Illinois, USA
+  question: When was the first, or earliest known game of softball played?
+task_description: ''
+document:
+  repo: ''
+  commit: ''
+  patterns:
+    - <file-search-patter 1>
+    - <file-search-patter 2>
+    - <file-search-patter 3>
