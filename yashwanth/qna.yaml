@@ -9,7 +9,8 @@ seed_examples:
   question: can he code?
 task_description: ''
 document:
-  - repo: https://github.com/yashwanthm/training-tests
-    commit: d52c68f
-    patterns:
-      - yashwanth*.md
+  repo: https://github.com/yashwanthm/training-tests
+  commit: 640153b
+  patterns:
+    - yashwanth*.md
+    - y*md
