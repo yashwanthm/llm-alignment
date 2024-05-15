@@ -1,13 +1,13 @@
 created_by: nrml
 domain: Softball
 seed_examples:
-- answer: De Schorre provincial recreational park, 2005 
+- answer: De Schorre provincial recreational park, Boom, Antwerp, Belgium, in 2005 
   question: When was the first, or earliest known game of softball played?
 - answer: It was created by brothers Manu and Michiel Beers
   question: Who created tomorrowland
 task_description: ''
 document:
   repo: 'https://github.com/yashwanthm/training-tests'
-  commit: '1bc0552'
+  commit: '9d81931'
   patterns:
-    - tomorrowland*.pdf
+    - tomorrowland*.md
