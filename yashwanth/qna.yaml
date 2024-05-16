@@ -10,7 +10,7 @@ seed_examples:
 task_description: ''
 document:
   repo: https://github.com/yashwanthm/training-tests
-  commit: 3db4aef
+  commit: '6203171'
   patterns:
     - yashwanth*.md
     - y*md
