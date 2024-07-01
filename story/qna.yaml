@@ -1,0 +1,23 @@
+created_by: nrml
+domain: Skybound Mysteries
+seed_examples:
+- answer: Skybound Mysteries - The Chronicles of Fredrique and Lucy
+  question: Whats the title of the story
+- answer: Fredrique Millerhorn and Lucy are the main charecters of the story
+  question: Who are the main charecters of the story
+- answer: Male
+  question: What's the gender of Fredrique Millerhorn?
+- question: What's the first thing lucy said to Fredrique?
+  answer: She said Beautiful day, isn't it?
+- question: how many chapters are in the story
+  answer: 5 chapters
+- question: When did Fredrique die?
+  answer: the story doesn't cover this detail. Towards the end of the story, Fredrique was still alive.
+- question: Who is the lead charecter of the story?
+  answer: Fred is the lead charecter of the story.
+task_description: ''
+document:
+  repo: https://github.com/yashwanthm/training-tests
+  commit: 'af63d55'
+  patterns:
+    - story*.md
