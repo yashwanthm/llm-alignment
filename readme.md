@@ -2,17 +2,17 @@
 # Tune and align LLMs with your data to deliver inferencing
 
 **Table of contents**
- 1. [Setup your environment](#setup)
+ 1. [Setup your environment](#setup-your-environment)
  2. [Prepare your data](#prepare-your-data)
- 3. [Train Model, Test the Model]
- 4. [Run the model with Podman Desktop AI Lab Extension]
- 5. [Integrate the model into you app]
- 6. [Deploy the model]
- 7. [Switch endpoint]
- 8. [Deploy Model- <PENDING>]
- 9. [Deploy Application - <PENDING>]
+ 3. [Train Model, Test the Model](#)
+ 4. [Serve the model locally with Podman Desktop AI Lab Extension](#serve-the-model-locally-with-podman-desktop-ai-lab-extension)
+ 5. [Integrate the model into you app](#)
+ 6. [Deploy the model](#)
+ 7. [Switch endpoint](#)
+ 8. [Deploy Model- <PENDING>](#)
+ 9. [Deploy Application - <PENDING>](#)
 
-## Setup your environment <a name="setup"></a>
+## Setup your environment
 
  1. `mkdir instructlab`
  2. `cd instructlab`
@@ -39,7 +39,18 @@ Change the model_path on `config.yaml`  to `model_path: models/granite-7b-lab-Q4
 3. Check if the taxonomy is valid using `ilab diff`
 4. Generate some synthetic data based on the qna.yaml that will be used to train the data using `ilab generate`
 5. Review generated data at --path--
-6. Train the model using `ilab train`
-7. Serve the newly generated model using `ilab serve --model-path instructlab-merlinite-7b-lab-trained/instructlab-merlinite-7b-lab-Q4_K_M.gguf`
-8. Chat with the newly generated model on a new terminal using `ilab model chat -m
-instructlab-merlinite-7b-lab-trained/instructlab-merlinite-7b-lab-Q4_K_M.gguf`
+
+## Train the model
+1. Train the model using `ilab train`
+2. Serve the newly generated model using `ilab serve --model-path instructlab-merlinite-7b-lab-trained/instructlab-merlinite-7b-lab-Q4_K_M.gguf`
+3. Chat with the newly generated model on a new terminal using `ilab model chat -m instructlab-merlinite-7b-lab-trained instructlab-merlinite-7b-lab-Q4_K_M.gguf`
+
+
+## Serve the model locally with Podman Desktop AI Lab Extension
+1. import - add screenshots
+2. deploy - add screenshots
+3. Copy the api call
+
+## Add inference to your app
+1. Add the API call to your app
+2. Display the response
