@@ -35,7 +35,7 @@ Change the model_path on `config.yaml`  to `model_path: models/granite-7b-lab-Q4
 [Taxonomy](https://github.com/instructlab/taxonomy) enables developers and data scientist to create a version of the knowledge that your model will be trained on. Developers can use `git` to manage to add a source control to the taxonomy that will help you control the data your model uses to respond back to the prompts. 
 
 1. Create `qna.yaml`, use https://github.com/yashwanthm/training-tests/blob/main/story/qna.yaml for a reference
-2. copy the qna.yaml to taxonomy/knowledge `cp ~/my_knowledge/story/qna.yml taxonomy/knowledge/literature/novels/SkyboundMysteries`
+2. copy the qna.yaml to taxonomy/knowledge `cp ~/my_knowledge/story/qna.yml taxonomy/knowledge/literature/novels/skybound-mysteries/qna.yaml`
 3. Check if the taxonomy is valid using `ilab diff`
 4. Generate some synthetic data based on the qna.yaml that will be used to train the data using `ilab generate`
 5. Review generated data at --path--
@@ -54,3 +54,30 @@ Change the model_path on `config.yaml`  to `model_path: models/granite-7b-lab-Q4
 ## Add inference to your app
 1. Add the API call to your app
 2. Display the response
+
+
+## Deploy the model
+Create a project on OpenShift AI
+Go to OpenShift Console, click on +
+Setup Minio - https://github.com/cfchase/basic-kserve-vllm/blob/main/setup/setup-s3.yaml
+Select the created project before you hit create
+
+Install OpenShift Serverless and OpenShift Service Mesh Operators
+
+Enable single model serving
+```
+spec:
+ components:
+   kserve:
+     managementState: Managed
+     serving:
+       ingressGateway:
+         certificate:
+           secretName: knative-serving-cert
+           type: SelfSigned
+       managementState: Managed
+       name: knative-serving
+```
+
+Add vllm runtime https://github.com/rh-aiservices-bu/llm-on-openshift/blob/main/serving-runtimes/vllm_runtime/vllm-runtime.yaml 
+
